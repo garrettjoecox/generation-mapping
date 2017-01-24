@@ -1,0 +1,41 @@
+ui-navbar {
+  background: $black;
+  transition: margin-top 250ms ease;
+  @include box-shadow(1);
+
+  &.hide {
+    margin-top: -4rem;
+    box-shadow: none;
+  }
+
+  .nav {
+    justify-content: flex-end;
+
+    .logo {
+      text-decoration: none;
+      margin-right: auto;
+      padding: 1rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $off-white;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .button {
+      background: none;
+      border: none;
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: $off-white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      &:hover, &:focus {
+        color: $blue;
+      }
+    }
+  }
+}

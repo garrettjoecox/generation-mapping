@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  background: #F5F5F5;
+}
+
+div, span, h1 {
+  user-select: none;
+  cursor: default;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.f1 {
+  flex: 1 0 auto;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+ui-navbar {
+  flex: 0 0 4rem;
+}
+
+ui-view {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.contained {
+  max-width: 60rem;
+  padding: 0 1rem;
+}

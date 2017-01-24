@@ -1,0 +1,20 @@
+<div class="f1 homeV contained row">
+  <div class="section col">
+    <div class="header row aic">
+      <span class="name f1">All Disciples</span>
+      <!-- <a href="#/user/create" class="button">+</a> -->
+    </div>
+    <div class="list f1">
+      <a class="list-item" ng-repeat="user in homeC.users" ui-sref="userProfile({ id: user.id })">{{user.displayName}}</a>
+    </div>
+  </div>
+  <div class="section col">
+    <div class="header row aic">
+      <span class="name f1">All Churches</span>
+      <!-- <a href="#/church/create" class="button">+</a> -->
+    </div>
+    <div class="list f1">
+
+    </div>
+  </div>
+</div>

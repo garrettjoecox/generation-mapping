@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generation Mapping</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="dist/vendor.css">
+  <link rel="stylesheet" type="text/css" href="dist/index.css">
+  <script src="dist/vendor.js"></script>
+  <script src="dist/index.js"></script>
+</head>
+<body ng-app="skeleton" class="col">
+  <ui-navbar class="row jcc" ng-class="$state.current.noAuth ? 'hide' : ''"></ui-navbar>
+  <ui-view class="f1 row jcc"></ui-view>
+</body>
+</html>

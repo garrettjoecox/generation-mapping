@@ -1,0 +1,41 @@
+.button {
+  background: #F5F5F5;
+  padding: 0.5rem;
+  border: 1px solid #DDD;
+  text-decoration: none;
+  color: #888;
+  outline: none;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+.button:hover, .button:focus {
+  background: #EEE;
+  color: #555;
+}
+
+.button.primary {
+  background: $blue;
+  color: white;
+  border: 1px solid $dark-blue;
+}
+
+.button.primary:hover, .button.primary:focus {
+  background: $dark-blue;
+  color: #FFF;
+}
+
+.input {
+  border: 1px solid $gray;
+  padding: 0.5rem;
+  outline: none;
+  transition: border 100ms ease;
+}
+
+.input:focus {
+  border: 1px solid $blue;
+}
+
+.input.ng-touched.ng-invalid {
+  border: 1px solid $red;
+}

@@ -1,0 +1,27 @@
+<div class="f1 col userProfileV contained">
+  <div class="card">
+    <span class="displayName">{{userProfileC.user.displayName}} <span class="id">({{userProfileC.user.id}})</span> </span>
+    <span ng-if="userProfileC.user.parent" class="parent">Discipler: <a href="#/user/{{userProfileC.user.parent.id}}">{{userProfileC.user.parent.displayName}}</a></span>
+    <span class="invite">inviteToken: <span class="token">{{userProfileC.user.inviteToken}}</span></span>
+  </div>
+  <div class="f1 row">
+    <div class="section col">
+      <div class="header row aic">
+        <span class="name f1">Disciples</span>
+        <a href="#/user/create" class="button">+</a>
+      </div>
+      <div class="list f1">
+        <a class="list-item" ng-repeat="user in userProfileC.users" ui-sref="userProfile({ id: user.id })">{{user.displayName}}</a>
+      </div>
+    </div>
+    <div class="section col">
+      <div class="header row aic">
+        <span class="name f1">Churches</span>
+        <a href="#/church/create" class="button">+</a>
+      </div>
+      <div class="list f1">
+
+      </div>
+    </div>
+  </div>
+</div>

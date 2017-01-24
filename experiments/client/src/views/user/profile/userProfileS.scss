@@ -1,0 +1,101 @@
+.userProfileV {
+  max-height: calc(100vh - 4rem);
+
+  .card {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    margin-bottom: 0;
+    background: $white;
+    @include box_shadow(1);
+
+    .displayName {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0.5rem 0;
+      display: block;
+      color: $black;
+
+      .id {
+        font-size: 1.2rem;
+        color: $darker-gray;
+      }
+    }
+
+    .parent {
+      display: block;
+      font-weight: 600;
+      color: $lighter-black;
+
+      a {
+        font-weight: 400;
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+
+    .invite {
+      display: block;
+      font-weight: 600;
+      color: $lighter-black;
+      margin: 0.5rem 0;
+
+      .token {
+        font-weight: 300;
+        user-select: initial;
+        cursor: text;
+        border: 1px solid $gray;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .section {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    background: $white;
+    @include box_shadow(1);
+    flex: 1;
+
+    .header {
+      flex-shrink: 0;
+      padding-bottom: 0.5rem;
+
+      .name {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .button {
+        padding: 0 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+      }
+    }
+
+    .list {
+      max-height: calc(100% - 3rem);
+      overflow: auto;
+      border-top: 1px solid $gray;
+      border-bottom: 1px solid $gray;
+
+      &:empty {
+        border-bottom: none;
+      }
+    }
+
+    .list-item {
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $dark-blue;
+      border-bottom: 1px solid $gray;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+}

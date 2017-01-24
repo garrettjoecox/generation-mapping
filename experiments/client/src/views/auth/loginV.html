@@ -1,0 +1,10 @@
+<div class="f1 authV contained col aic jcc">
+  <form ng-submit="authC.login(authC.form)" class="block col">
+    <span class="logo">Generation Mapping</span>
+    <span class="header">Log In</span>
+    <input ng-model="authC.form.email" class="input" type="email" placeholder="Email" required>
+    <input ng-model="authC.form.password" class="input" type="password" placeholder="Password" required minlength="6">
+    <input class="button primary" type="submit" value="Log in">
+    <span class="sub">Don't have an account? <a href="#/signup">Sign up...</a></span>
+  </form>
+</div>

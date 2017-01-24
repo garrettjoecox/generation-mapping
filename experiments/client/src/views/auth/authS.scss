@@ -1,0 +1,38 @@
+.authV {
+
+  .block {
+    background: $white;
+    padding: 2rem 1rem;
+    min-width: 20rem;
+    @include box_shadow(1);
+
+    .header, .button, .input {
+      margin: 0.5rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      color: $black;
+    }
+
+    .header {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $gray;
+    }
+
+    .sub {
+      font-size: 0.8rem;
+      text-align: center;
+      color: $light-black;
+
+      a {
+        color: $blue;
+      }
+    }
+  }
+}

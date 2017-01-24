@@ -1,0 +1,52 @@
+.homeV {
+  max-height: calc(100vh - 4rem);
+
+  .section {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    background: $white;
+    @include box_shadow(1);
+    flex: 1;
+
+    .header {
+      flex-shrink: 0;
+      padding-bottom: 0.5rem;
+
+      .name {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .button {
+        padding: 0 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+      }
+    }
+
+    .list {
+      max-height: calc(100% - 3rem);
+      overflow: auto;
+      border-top: 1px solid $gray;
+      border-bottom: 1px solid $gray;
+
+      &:empty {
+        border-bottom: none;
+      }
+    }
+
+    .list-item {
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $dark-blue;
+      border-bottom: 1px solid $gray;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+}

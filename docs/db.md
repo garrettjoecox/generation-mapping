@@ -55,3 +55,6 @@ Church Schema
     - Children
     - Display Name
     - Invite Code
+    - email
+    - password
+    - 
